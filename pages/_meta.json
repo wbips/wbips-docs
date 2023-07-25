@@ -1,11 +1,3 @@
 {
-  "index": "Overview",
-  "contact": "Contact Us",
-  "fruits": "Delicious Fruits",
-  "about": "About Us",
-  "github_link": {
-    "title": "webbtc",
-    "href": "https://github.com/wbips/webbtc-docs",
-    "newWindow": true
-  }
+  "index": "Overview"
 }
