@@ -1,4 +1,4 @@
-# References 
+# References
 
 - [Spec Demo](https://bitcoinandlightninglayerspecs.github.io)
 - [Onchain Wallet Documentation](https://wallet.synonym.to)

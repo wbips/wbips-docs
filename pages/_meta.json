@@ -1,3 +1,17 @@
 {
-  "index": "Overview"
+  "index": "Overview",
+  "getting_started": "Getting Started",
+  "wbips": "WBIPs",
+  "-": {
+    "type": "separator",
+    "title": "APIs"
+  },
+  "provider_api": "Provider API Reference",
+  "--": {
+    "type": "separator",
+    "title": "More"
+  },
+  "squatting": "Squatting",
+  "extending": "Extendability",
+  "references": "References"
 }

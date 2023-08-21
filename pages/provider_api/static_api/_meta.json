@@ -1,0 +1,18 @@
+{
+  "enable": ".enable",
+  "getAddress": ".getAddress",
+  "info": ".getInfo",
+  "makeInvoice": ".makeInvoice",
+  "-": {
+    "type": "separator",
+    "title": "Signing"
+  },
+  "sign": ".sign",
+  "verify": ".verify",
+  "--": {
+    "type": "separator",
+    "title": "Transactions"
+  },
+  "send": ".send",
+  "sendTransaction": ".sendTransaction"
+}

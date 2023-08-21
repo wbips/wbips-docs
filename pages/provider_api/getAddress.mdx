@@ -1,9 +1,13 @@
+import { Callout } from "nextra/components";
+
 # Get addresses from wallet
 
-The `getAddresses` method is called to obtain an onchain address from the wallet. 
+The `getAddresses` method is called to obtain an onchain address from the wallet.
 
-> **_NOTE:_**  
-WebLN implementations might choose to implement this method when exposing access to the onchain wallet. 
+<Callout type="info" emoji="ℹ️">
+  WebLN implementations might choose to implement this method when exposing
+  access to the onchain wallet.
+</Callout>
 
 ## Syntax
 
@@ -20,10 +24,10 @@ getAddresses(index?, num?, change?)
 ## Returns
 
 - AddressObjectArray - An array of bitcoin address objects <span class="badge">Required</span>
-    - address: String - Bitcoin address <span class="badge">Required</span>
-    - derivationPath: String - Derivation path of the address e.g. "84'/1'/0'/0/0" <span class="badge">Optional</span>
-    - publicKey: String(Hex) - The public key for the derivation path <span class="badge">Optional</span>
-    - index: Number - Index of the address <span class="badge">Optional</span>
+  - address: String - Bitcoin address <span class="badge">Required</span>
+  - derivationPath: String - Derivation path of the address e.g. "84'/1'/0'/0/0" <span class="badge">Optional</span>
+  - publicKey: String(Hex) - The public key for the derivation path <span class="badge">Optional</span>
+  - index: Number - Index of the address <span class="badge">Optional</span>
 
 ## Example
 

@@ -15,6 +15,7 @@
     "autoprefixer": "10.4.14",
     "eslint": "8.45.0",
     "eslint-config-next": "13.4.12",
+    "lucide-react": "^0.263.1",
     "next": "13.4.12",
     "nextra": "^2.10.0",
     "nextra-theme-docs": "^2.10.0",
