@@ -1,3 +1,5 @@
+import { Callout } from "nextra/components";
+
 # Enable Wallet
 
 The `enable` method is called to allow access to further API methods from the wallet.
