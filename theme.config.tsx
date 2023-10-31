@@ -48,21 +48,6 @@ const themeConfig = {
       `}</style>
     </span>
   ),
-  footer: {
-    text: (
-      <div style={{ textAlign: "center", width: "100%" }}>
-        <Link href="https://vercel.com?utm_source=wbips&utm_campaign=oss">
-          <Image
-            width={212}
-            height={44}
-            style={{ display: "block", margin: "auto" }}
-            alt="Powered by Vercel"
-            src="/powered-by-vercel.svg"
-          />
-        </Link>
-      </div>
-    ),
-  },
 };
 
 export default themeConfig;
