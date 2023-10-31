@@ -1,0 +1,52 @@
+import { Callout } from "nextra/components";
+
+# WBIPs
+
+<Callout type="info" emoji="ℹ️">
+  While this document and some proposals are a work-in-progress, it can be used
+  in production in agreement with wallets implementing the standard. The
+  thinking behind this is to use, test, and iterate on proposals in a real-world
+  environment. There should not be a burden of waiting for some ratification
+  criteria or 100% consensus.
+</Callout>
+
+## Motivation
+
+**Mission**: Make it easier for developers to build BTC enabled experiences!
+
+- A single interface for BTC and L2s
+  - `window.webbtc`
+  - Use namespaces in method strings to denote L2s (e.g. “lbtc*” for Liquid wrapped, “ln*” for lightning, “stx\_” for Stacks)
+  - .request API which is future proof, without needing new specs or updates on the provider implementation
+  - Standardized JSON API for alternatives communication channels (e.g. WalletConnect)
+- Simple and dynamic interface
+  - i.e. not static methods, but rather dynamic strings and JSON objects
+- Removal of .enable flow of webbtc
+  - The .enable flow is a solution to fingerprinting, which would already be harder to do via dynamic methods. So webbtc can keep it for most methods, but .request should not need it
+- Reduce overlap/duplication of webbtc and webln \*optional
+  - Up for discussion; webln might stay under the current webln namespace (but could re-use the proposals used for WBIP webbtc, e.g. providers API to register wallets)
+- Removal of bloat observed in other systems
+  - e.g. Ethereum's web3.js (and reliance on many dependencies to initialize)
+  - e.g. Stacks Conntect:
+    - Success/Error callbacks
+    - Unnecessary JWT wrapping
+    - Unnecessary parameters (e.g. appDetails)
+- The wallet (the user) should have more control over the actions than the web-app
+- Inspired by webbtc, webln; **UPDATE**: WBIPs are now meant to be 99% compatible with webbtc and are seen as a v2.0 of webbtc.
+- Inspired by Sats Connect by Xverse
+- Todo: Add Guiding Motivation to Intro WBIP
+
+? No CAIP by default (the less of a burden for the web-app developer, the better). Users should be able to switch/choose network/chain, or Wallet should be able to choose/switch on the users behalf.
+TODO: Why not CAIP
+WBIPs should be usable without the developer needing to figure out what is in “review/final/etc.”. The website should be able to try to use a feature and safely show the end-user a message if the feature doesn't exist yet. The Wallet (which would imply All Wallets) should not need to add something before the users/developers want to use features. This will shift the course of BTC enabled websites into a more democratic / user-driven direction.
+
+## Goals
+
+Work together as group on single JS API standard
+
+- Open to other wallets and ecosystem parties as well
+  - Alby
+  - Unisat
+  - Webbtc
+  - Marketplaces (OpenOrdex, etc.)
+- Reduce methods to essentials, what do we need?
