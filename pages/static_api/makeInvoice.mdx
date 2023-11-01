@@ -4,19 +4,17 @@ import { Callout } from "nextra/components";
 
 The `makeInvoice` method is used to generate a new invoice.
 
-## Syntax
-
-```
-makeInvoice(Object)
+```js
+makeInvoice(Object);
 ```
 
 ## Parameters
 
 - Object
-  - amount : string | number <span className="badge">Optional</span>
-  - defaultMemo : string <span className="badge">Optional</span>
-  - label : string <span className="badge">Optional</span>
-  - message : string <span className="badge">Optional</span>
+  - `amount`: string | number <span className="badge">Optional</span>
+  - `defaultMemo`: string <span className="badge">Optional</span>
+  - `label`: string <span className="badge">Optional</span>
+  - `message`: string <span className="badge">Optional</span>
 
 <Callout type="info" emoji="ℹ️">
   Providing any of the above would result in a pre-populating a a prompt which
@@ -27,16 +25,16 @@ makeInvoice(Object)
 ## Returns
 
 - Object
-  - paymentRequest: string; <span className="badge">LN Invoice</span>
-  - BIP21 address string; <span className="badge">Onchain BIP 21 URI</span>
+  - `paymentRequest`: string <span className="badge">LN Invoice</span>
+  - `BIP21 address`: string <span className="badge">On-chain BIP 21 URI</span>
 
 ## Example
 
 ```js
 await window.webln.makeInvoice({});
-// {
-//   paymentRequest: 'lnbc10n1p3x9thxpp59xj4cmm26jnpnrfekgncyj42e9lxredz…734s07kxt8hl2s6wuv20kh7kw7h5lurtmyscsrwgkgptn4z2j', rHash: '29a55c6f6ad4a6198d39b227824aaac97e61e5a2428db7dab7f8b097ae5d28ca'
-// }
+{
+  paymentRequest: 'lnbc10n1p3x9thxpp59xj4cmm26jnpnrfekgncyj42e9lxredz…734s07kxt8hl2s6wuv20kh7kw7h5lurtmyscsrwgkgptn4z2j', rHash: '29a55c6f6ad4a6198d39b227824aaac97e61e5a2428db7dab7f8b097ae5d28ca'
+}
 ```
 
 ```js
@@ -48,9 +46,9 @@ window.bitcoin.makeInvoice({ amount: 1, label: "Label", message: "Message" });
 
 These parameters might not be required in the spec as they are used by the website for convenience purposes in setting up the invoice dialog.
 
-defaultAmount?: string | number;
-minimumAmount?: string | number;
-maximumAmount?: string | number;
+- `defaultAmount?`: string | number
+- `minimumAmount?`: string | number
+- `maximumAmount?`: string | number
 
 ## Notes
 

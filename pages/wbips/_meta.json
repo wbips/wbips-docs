@@ -1,0 +1,9 @@
+{
+  "WBIP000": "WBIP000 — Intro",
+  "WBIP001": "WBIP001 — JSON RPC",
+  "WBIP002": "WBIP002 — Namespaces",
+  "WBIP003": "WBIP003 — Conventions",
+  "WBIP004": "WBIP005 — Providers",
+  "WBIP005": "WBIP005 — BTC Methods",
+  "WBIP006": "WBIP006 — .signPSBT"
+}

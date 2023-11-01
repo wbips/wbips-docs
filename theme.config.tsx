@@ -5,6 +5,9 @@ const themeConfig = {
   project: {
     link: "https://github.com/wbips/webbtc-docs",
   },
+  sidebar: {
+    defaultMenuCollapseLevel: 1,
+  },
   logo: (
     <span>
       <svg

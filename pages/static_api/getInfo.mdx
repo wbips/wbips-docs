@@ -4,31 +4,24 @@ import { Callout } from "nextra/components";
 
 The `getInfo` method is called to obtain supported features and capabilities of the wallet.
 
-## Syntax
-
+```js
+getInfo();
 ```
-getInfo()
-```
-
-## Parameters
-
-None
 
 ## Returns
 
 - Object
-  - version : Number | String <span class="badge">Required</span>
-  - methods : Array <span class="badge">Optional</span>
-  - supports : Array <span class="badge">Optional</span>
+  - `version`: number | string <span class="badge">Required</span>
+  - `methods`: Array <span class="badge">Optional</span>
+  - `supports`: Array <span class="badge">Optional</span>
 
 ## Example
 
-```
+```js
 window.webbtc.getInfo()
-
 {
-  "version" : 1,
-  "supports" : [
+  "version": 1,
+  "supports": [
     "bip39",
     "bip32"
   ],
@@ -53,7 +46,9 @@ The above method might be extended to include helper methods which include.
 - `window.webbtc.getServices()`
 
 <Callout type="info" emoji="ℹ️">
-  Method for obtaining existing supported permissions that the user could approve when enabling the wallet. Application specific implementation details can vary based on the security preference.
+  Method for obtaining existing supported permissions that the user could
+  approve when enabling the wallet. Application specific implementation details
+  can vary based on the security preference.
 </Callout>
 
 ## Concerns and security observations

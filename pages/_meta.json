@@ -1,17 +1,32 @@
 {
   "index": "Overview",
   "getting_started": "Getting Started",
-  "wbips": "WBIPs",
+
   "-": {
     "type": "separator",
-    "title": "APIs"
+    "title": "Provider API Reference"
   },
-  "provider_api": "Provider API Reference",
+  "request_api": "Request API",
+  "static_api": "Static API",
+
   "--": {
     "type": "separator",
     "title": "More"
   },
+  "wbips": "WBIPs",
   "squatting": "Squatting",
-  "extending": "Extendability",
-  "references": "References"
+  "references": "References",
+
+  "meeting": {
+    "title": "Meeting",
+    "type": "page",
+    "href": "https://calendar.google.com/calendar/event?action=TEMPLATE&tmeid=N2FvaWQ2NTg5bjZ0dmk5c2dmZzUzbmhlOTlfMjAyMzA1MTZUMTQwMDAwWiBqYW5uaWtAaGlyby5zbw&tmsrc=jannik%40hiro.so&scp=ALL",
+    "newWindow": true
+  },
+  "discord": {
+    "title": "Discord",
+    "type": "page",
+    "href": "https://discord.com/channels/903125802726596648/1123297633495167108/1123297690424463421",
+    "newWindow": true
+  }
 }

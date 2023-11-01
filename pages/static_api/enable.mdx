@@ -4,37 +4,30 @@ import { Callout } from "nextra/components";
 
 The `enable` method is called to allow access to further API methods from the wallet.
 
-## Syntax
-
+```js
+enable();
 ```
-enable()
-```
-
-## Parameters
-
-None
 
 ## Returns
 
 - Object
-  - enabled : Boolean <span class="badge">Required</span>
-  - addresses : AddressObjArray <span class="badge">Optional</span>
-    - address: String
-    - derivationPath: String
-    - publicKey: String
+  - `enabled`: boolean <span class="badge">Required</span>
+  - `addresses`: Array <span class="badge">Optional</span>
+    - `address`: string
+    - `derivationPath`: string
+    - `publicKey`: string
 
 <Callout type="info" emoji="ℹ️">
-  The AddressObjArray here can be returned for Onchain wallets but can also be used ny WebLN wallets which also expose the onchain wallet functions. This typically is used to show that a wallet is connected to the page.
+  The `AddressObjArray` here can be returned for on-chain wallets but can also
+  be used by WebLN wallets which also expose the on-chain wallet functions. This
+  typically is used to show that a wallet is connected to the page.
 </Callout>
-
-![ENABLED ON WEBSITE](/assets/enable.png)
 
 ## Example
 
-```
+```js
 // Enable wallet
-window.webbtc.enable()
-
+window.webbtc.enable();
 {
   address: {
     address: "bc1q9zw3q496dcx2qu5pvhvg0zwfsxgj79nhh5rqct"
@@ -45,16 +38,15 @@ window.webbtc.enable()
 }
 ```
 
-```
+```js
 // Check if the wallet is enabled
-window.webbtc.enabled
-
+window.webbtc.enabled;
 true
 ```
 
-```
+```js
 // Check if wallet is enabled, invoke enable when false
-if (!window.webbtc.enabled) window.webbtc.enable()
+if (!window.webbtc.enabled) window.webbtc.enable();
 ```
 
 ## Notes
