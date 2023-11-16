@@ -45,6 +45,7 @@ interface Provider {
   iOSAppStoreUrl?: string; // URL to iOS App Store Page
 
   methods?: string[]; // List of methods supported by this provider
+}
 ```
 
 ### Security
