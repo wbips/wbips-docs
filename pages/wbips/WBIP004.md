@@ -54,7 +54,7 @@ interface Provider {
 
 ### History
 
-Providers previously added their global `windo.webbtc` object (aka "provder") to a web context. This often lead to conflicts with other providers.
+Providers previously added their global `window.webbtc` object (aka "provider") to a web context. This often lead to conflicts with other providers.
 
 ### `TODO`
 
