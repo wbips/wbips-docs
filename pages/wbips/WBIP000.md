@@ -4,7 +4,7 @@
 
 ## What is a WBIP?
 
-WBIP stands for WebBtc Improvement Proposal and is inspired by other improvement proposal initiatives (e.g. BIPs, NIPs). Rather than adding a new standard and convention—adding to the burden of choice—WBIPs aim to build upon the webbtc protocol.
+WBIP stands for WebBtc Improvement Proposal and is inspired by other improvement proposal initiatives (e.g. BIPs, NIPs). Rather than adding a new standard and convention—adding to the burden of choice—WBIPs aim to build upon the WebBTC protocol.
 
 _This WBIP and following WBIPs SHOULD use RFC-2119 language for accuracy._
 
@@ -28,7 +28,7 @@ An effective WBIP embodies several characteristics:
 - **Justified Choices**: A well-crafted WBIP does not only prescribe solutions but also provides the reasoning behind the choices made. If multiple approaches or conventions are possible, a strong WBIP will explain why one was selected over the others.
 - **Invites Collaboration**: WBIPs should also foster a sense of community and collaboration. Encouraging input from various stakeholders can help to refine and improve the proposals, leading to more robust and widely accepted standards.
 
-> By adhering to these guidelines, WBIPs can serve as effective vehicles for improving and enhancing the webbtc protocol while ensuring broad acceptance and ease of implementation.
+> By adhering to these guidelines, WBIPs can serve as effective vehicles for improving and enhancing the WebBTC protocol while ensuring broad acceptance and ease of implementation.
 
 Todo: Motivation
 

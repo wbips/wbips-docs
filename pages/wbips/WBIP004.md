@@ -11,16 +11,19 @@ if (!window.webbtc_providers) window.webbtc_providers = []; // SHOULD make sure 
 
 // SHOULD `.push`, NEVER overwrite the whole array
 window.webbtc_providers.push = {
-  id: 'MyWalletProvider',
-  name: 'My Wallet',
-  icon: 'data:image/svg+xml;base64,PHN2Z..ZnPgo=',
+  id: "MyWalletProvider",
+  name: "My Wallet",
+  icon: "data:image/svg+xml;base64,PHN2Z..ZnPgo=",
 
-  webUrl: 'https://example.com/wallet',
+  webUrl: "https://example.com/wallet",
 
-  chromeWebStoreUrl: 'https://chrome.google.com/webstore/detail/hiro-wallet/xxxxxyyyyyzzzzz',
-  mozillaAddOnsUrl: 'https://addons.mozilla.org/en-US/firefox/addon/xxxxxyyyyyzzzzz',
-  googlePlayStoreUrl: 'https://play.google.com/store/apps/details?id=ixxxxxyyyyyzzzzz',
-  iOSAppStoreUrl: 'https://apps.apple.com/app/hiro-wallet/idxxxxxyyyyyzzzzz',
+  chromeWebStoreUrl:
+    "https://chrome.google.com/webstore/detail/hiro-wallet/xxxxxyyyyyzzzzz",
+  mozillaAddOnsUrl:
+    "https://addons.mozilla.org/en-US/firefox/addon/xxxxxyyyyyzzzzz",
+  googlePlayStoreUrl:
+    "https://play.google.com/store/apps/details?id=ixxxxxyyyyyzzzzz",
+  iOSAppStoreUrl: "https://apps.apple.com/app/hiro-wallet/idxxxxxyyyyyzzzzz",
 
   methods: ["getAddresses", "makeInvoice", "signMessage"],
 };

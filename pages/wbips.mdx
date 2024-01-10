@@ -21,10 +21,10 @@ import { Callout } from "nextra/components";
   - Standardized JSON API for alternatives communication channels (e.g. WalletConnect)
 - Simple and dynamic interface
   - i.e. not static methods, but rather dynamic strings and JSON objects
-- Removal of .enable flow of webbtc
-  - The .enable flow is a solution to fingerprinting, which would already be harder to do via dynamic methods. So webbtc can keep it for most methods, but .request should not need it
-- Reduce overlap/duplication of webbtc and webln \*optional
-  - Up for discussion; webln might stay under the current webln namespace (but could re-use the proposals used for WBIP webbtc, e.g. providers API to register wallets)
+- Removal of .enable flow of WebBTC
+  - The .enable flow is a solution to fingerprinting, which would already be harder to do via dynamic methods. So WebBTC can keep it for most methods, but .request should not need it
+- Reduce overlap/duplication of WebBTC and webln \*optional
+  - Up for discussion; webln might stay under the current webln namespace (but could re-use the proposals used for WBIP WebBTC, e.g. providers API to register wallets)
 - Removal of bloat observed in other systems
   - e.g. Ethereum's web3.js (with its reliance on many dependencies to initialize)
   - e.g. Stacks Connect (with its outdated success/error callbacks, unnecessary JWT wrapping and parameters)
