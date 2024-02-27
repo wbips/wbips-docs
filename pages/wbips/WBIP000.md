@@ -4,7 +4,7 @@
 
 ## What is a WBIP?
 
-WBIP stands for WebBtc Improvement Proposal and is inspired by other improvement proposal initiatives (e.g. BIPs, NIPs). Rather than adding a new standard and convention—adding to the burden of choice—WBIPs aim to build upon the WebBTC protocol.
+WBIP stands for Wallet BIP and is inspired by other improvement proposal initiatives (e.g. BIPs, NIPs). Rather than adding a new standard and convention—adding to the burden of choice — WBIPs aim to build upon the existing ideas in the community.
 
 _This WBIP and following WBIPs SHOULD use RFC-2119 language for accuracy._
 
@@ -28,7 +28,7 @@ An effective WBIP embodies several characteristics:
 - **Justified Choices**: A well-crafted WBIP does not only prescribe solutions but also provides the reasoning behind the choices made. If multiple approaches or conventions are possible, a strong WBIP will explain why one was selected over the others.
 - **Invites Collaboration**: WBIPs should also foster a sense of community and collaboration. Encouraging input from various stakeholders can help to refine and improve the proposals, leading to more robust and widely accepted standards.
 
-> By adhering to these guidelines, WBIPs can serve as effective vehicles for improving and enhancing the WebBTC protocol while ensuring broad acceptance and ease of implementation.
+> By adhering to these guidelines, WBIPs can serve as effective vehicles for improving and enhancing the protocol while ensuring broad acceptance and ease of implementation.
 
 Todo: Motivation
 
@@ -37,10 +37,18 @@ Nostr, bip, caip
 
 ## Tags
 
-Tags are used to categorize WBIPs. They are formatted as space-separated words in backticks (markdown code). Tags are the first things listed in a WBIP after the title (markdown H1).
+Tags are used to categorize WBIPs. They are formatted as space-separated words in backticks (markdown code). Tags are the first things listed in a WBIP after the title/heading (markdown H1).
 
-`draft`, `accepted`, `rejected` — WBIPs are tagged with `draft` until they are accepted by the community. Once accepted, they are tagged with `accepted`. If a WBIP is rejected, it is tagged with `rejected`. If these tags are used the WBIP should have some acceptance criteria.
+`draft`, `accepted`, `rejected` — WBIPs are tagged with `draft` until they are accepted by the community.
+Once accepted, they are tagged with `accepted`.
+If a WBIP is rejected, it is tagged with `rejected`.
+If these tags are used the WBIP should have some acceptance criteria.
+
+In general, the `draft` tag should not discourage developers from using a WBIP.
+WBIPs SHOULD be designed to be flexible enough to not constrain developers too much.
 
 ## Fields
 
-An "author" field is optional. If the author or multiple authors are specified, these SHOULD be listed near the top of the WBIP, similar to tags.
+If any fields (`key: value` pairs) are specified, these SHOULD be listed after any tags at the top of the WBIP.
+
+For example, an "author" or "authors" field is optional. e.g. `author: John Doe`, `authors: Yuki Watanabe, John Doe`

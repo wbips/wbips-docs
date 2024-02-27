@@ -2,19 +2,14 @@
   "index": "Overview",
   "getting_started": "Getting Started",
 
-  "-": {
-    "type": "separator",
-    "title": "Provider API Reference"
-  },
   "request_api": "Request API",
-  "static_api": "Static API",
+
+  "wbips": "WBIPs",
 
   "--": {
     "type": "separator",
     "title": "More"
   },
-  "wbips": "WBIPs",
-  "squatting": "Squatting",
   "references": "References",
 
   "meeting": {

@@ -8,7 +8,7 @@ JSON RPC methods, which do NOT strictly apply to the core Bitcoin base layer SHO
 
 RPC methods for Bictoin itself SHOULD NOT be namespaced (e.g. `getAddresses`).
 
-It is RECOMMENDED to only add methods for protocols, which somehow relate to Bitcoin (especially RECOMMENDED for layer-2 protocols). These protocols may have their own token/currecny and may even be centralized — the WebBTC protocol does not judge.
+It is RECOMMENDED to only add methods for protocols, which somehow relate to Bitcoin (especially RECOMMENDED for layer-2 protocols). These protocols may have their own token/currecny and may even be centralized.
 
 Proposed prefixes:
 

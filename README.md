@@ -1,6 +1,6 @@
 # `wbips docs`
 
-Documentation for WebBTC Improvements Proposals (WBIPs).
+Documentation for Wallet BIPs.
 
 ## Development
 

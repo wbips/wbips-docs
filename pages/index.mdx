@@ -3,11 +3,11 @@
 <div className="flex space-x-4 items-center">
   <div className="space-y-4">
     <h2 className="font-bold text-4xl leading-10">
-      <span>Combine the power of Bitcoin with your website!</span>
+      <span>Add the power of Bitcoin to your website!</span>
     </h2>
     <p className="text-lg">
-      WebBTC is a set of specifications for web apps and client providers to
-      facilitate communication with Bitcoin & Lightning wallets.
+      WBIPs are a set of specifications for web apps and client providers to
+      facilitate communication with Bitcoin, Lightning wallets, and more.
     </p>
     <p className="text-lg">
       It provides a programmatic, permissioned interface for letting web apps
@@ -15,29 +15,22 @@
     </p>
     <div className="space-x-3">
       <a href="/getting_started" className="inline-block bg-blue-500 text-blue-50 rounded-lg px-3 py-2">Get started →</a>
-      <a href="https://www.webln.guide/" className="inline-block bg-yellow-500 text-yellow-50 rounded-lg px-3 py-2" target="_blank">WebLN</a>
     </div>
-  </div>
-  <div>
-    <img src="/globe.png" className="block m-auto max-w-[186px]" />
   </div>
 </div>
 
 <div className="mt-16" />
 
-WebBTC is a common convention in the Bitcoin web application ecosystem is for key management software (“wallets”) to expose their API via a JavaScript object in the web page. This object is called the common web wallet interface.
+WBIPs are inspired by WebBTC and similar ideas. They provide a a common convention in the Bitcoin web application ecosystem is for key management software ("wallets") to expose their API via a JavaScript object in the web page. This object is called the common web wallet interface.
 
-<p className="text-center text-sm font-bold text-gray-300 mt-16">
-  USED BY — SOON?
+<p className="text-center text-sm font-bold text-gray-300 mt-16 uppercase">
+  Working Group
 </p>
-<div className="grid grid-cols-3 items-center gap-16 filter brightness-90 grayscale hover:grayscale-0">
+<div className="grid grid-cols-4 items-center gap-16 filter brightness-90 grayscale hover:grayscale-0">
   <div className="mx-auto">![](/xverse.webp)</div>
   <div className="mx-auto">![](/asigna.png)</div>
   <div className="mx-auto">![](/leather.svg)</div>
+  <div className="mx-auto max-w-[72px]">![](/hiro.png)</div>
 </div>
 
 Historically, Provider implementations have exhibited conflicting interfaces and behaviors between wallets. This working group formalizes an Bitcoin extension API to promote wallet interoperability. The API is designed to be minimal, event-driven, and agnostic of transport and RPC protocols. Its functionality is easily extended by defining new RPC methods and message event types.
-
-Historically, providers have been made available as `window.bitcoin` or `window.webln` in web browsers, but this convention is not part of the specification.
-
-A list of current work in progress can be tracked from the [issues](https://github.com/BitcoinAndLightningLayerSpecs/WebBTC/issues) tab in the [playground repository](https://github.com/BitcoinAndLightningLayerSpecs/WebBTC/issues), which includes a functional spec demonstration. A hosted instance of the demo can be found [here](https://bitcoinandlightninglayerspecs.github.io/) together with the accompanying [specification documentation](https://bitcoinandlightninglayerspecs.github.io/docs).
