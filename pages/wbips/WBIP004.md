@@ -4,13 +4,13 @@
 
 This WBIP proposes a way of registering providers to be discovered by users of the WebBTC web interface.
 
-Wallets SHOULD register their provider information under `window.webbtc_providers` to be discoverable by websites/libraries expecting this WBIP.
+Wallets SHOULD register their provider information under `window.btc_providers` to be discoverable by websites/libraries expecting this WBIP.
 
 ```js
-if (!window.webbtc_providers) window.webbtc_providers = []; // SHOULD make sure the array exists
+if (!window.btc_providers) window.btc_providers = []; // SHOULD make sure the array exists
 
 // SHOULD `.push`, NEVER overwrite the whole array
-window.webbtc_providers.push = {
+window.btc_providers.push = {
   id: "MyWalletProvider",
   name: "My Wallet",
   icon: "data:image/svg+xml;base64,PHN2Z..ZnPgo=",
@@ -57,7 +57,7 @@ interface Provider {
 
 ### History
 
-Providers previously added their global `window.webbtc` object (aka "provider") to a web context. This often lead to conflicts with other providers.
+Providers previously added their global `window.btc` object (aka "provider") to a web context. This often lead to conflicts with other providers.
 
 ### `TODO`
 
