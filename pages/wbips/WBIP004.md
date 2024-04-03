@@ -2,6 +2,8 @@
 
 `draft`
 
+> **todo:** also consider EIP inspired provider discovery (events/messages)
+
 This WBIP proposes a way of registering providers to be discovered by users of the WebBTC web interface.
 
 Wallets SHOULD register their provider information under `window.btc_providers` to be discoverable by websites/libraries expecting this WBIP.
