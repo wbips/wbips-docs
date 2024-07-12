@@ -1,3 +1,8 @@
 {
-  "overview": "Overview"
+  "overview": "Overview",
+  "-": {
+    "type": "separator",
+    "title": "Bitcoin Methods"
+  },
+  "signMessage": "`.signMessage`"
 }
