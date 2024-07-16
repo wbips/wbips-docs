@@ -4,5 +4,10 @@
     "type": "separator",
     "title": "Bitcoin Methods"
   },
-  "signMessage": "`.signMessage`"
+  "signMessage": ".signMessage",
+  "getAddresses": ".getAddresses",
+  "--": {
+    "type": "separator"
+  },
+  "stx": "Stacks"
 }
