@@ -6,6 +6,8 @@
   },
   "signMessage": ".signMessage",
   "getAddresses": ".getAddresses",
+  "sendTransfer": ".sendTransfer",
+  "signPsbt": ".signPsbt",
   "--": {
     "type": "separator"
   },
