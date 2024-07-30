@@ -11,9 +11,9 @@ This WBIP mainly exists for backwards compatibility. Refer to the prior document
 ```
 Parameters: None
 Returns: {
-  version*: number | string,
-  methods: string[],
-  supports: string[]
+  version: number | string,
+  methods?: string[],
+  supports?: string[]
 }
 ```
 
@@ -26,10 +26,10 @@ Parameters: {
   purposes: string[],
 }
 Returns: {
-  address*: string,
-  type: string,
-  purpose: string,
-  publicKey: string
+  address: string,
+  type?: string,
+  purpose?: string,
+  publicKey?: string
 }[]
 
 Purpose: 'change' | 'ordinals' | etc
@@ -42,10 +42,10 @@ Type: 'p2pkh' | 'p2sh' | 'p2wpkh-p2sh' | 'p2wpkh' | 'p2tr'
 
 ```
 Parameters: {
-  amount*: string | number,
-  defaultMemo: string,
-  label: string,
-  message: string
+  amount: string | number,
+  memo?: string,
+  label?: string,
+  message?: string
 }
 Returns: {
   paymentRequest: string
@@ -56,13 +56,13 @@ Returns: {
 
 ```
 Parameters: {
-  message*: string,
-  address: {}
+  message: string,
+  address?: {}
 }
 Returns: {
-  signature*: string,
-  messageHash: string,
-  address: string
+  signature: string,
+  messageHash?: string,
+  address?: string
 }
 ```
 
@@ -74,10 +74,10 @@ Returns: {
 
 ```
 Parameters: {
-  paymentRequest*: string
+  paymentRequest: string
 }
 Returns: {
-  txid*: string
+  txid: string
 }
 ```
 
@@ -85,17 +85,17 @@ Returns: {
 
 ```
 Parameters: {
-  recipients*: {
-    address*: string,
-    amount*: number
+  recipients: {
+    address: string,
+    amount: number
   }[]
 }
 Returns: {
-  txid*: string
+  txid: string
 }
 ```
 
 ---
 
-Required fields are marked with a `*`.
+Fields are required, unless they are marked with a `?`.
 Exact type/usage definitions are assumed to be self-evident. This document follows a pseudo-definition similar to TypeScript.

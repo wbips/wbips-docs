@@ -4,9 +4,10 @@
     "type": "separator",
     "title": "Bitcoin Methods"
   },
-  "signMessage": ".signMessage",
   "getAddresses": ".getAddresses",
+  "getAccountAddresses": ".getAccountAddresses",
   "sendTransfer": ".sendTransfer",
+  "signMessage": ".signMessage",
   "signPsbt": ".signPsbt",
   "--": {
     "type": "separator"

@@ -8,9 +8,9 @@ This WBIP proposes a new JSON RPC method for letting wallets sign partially sign
 
 ```
 Parameters: {
-  psbt*: string, // hex encoded psbt
-  signInputs: number[] | SignInputsByAddress,
-  allowedSignHash: SigHash[] // default: [SigHash.ALL]
+  psbt: string, // hex encoded psbt
+  signInputs?: number[] | SignInputsByAddress,
+  allowedSignHash?: SigHash[] // default: [SigHash.ALL]
 }
 
 SignInputsByAddress: {

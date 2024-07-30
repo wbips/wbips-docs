@@ -23,14 +23,27 @@
 
 WBIPs are inspired by WebBTC and similar ideas. They provide a a common convention in the Bitcoin web application ecosystem is for key management software ("wallets") to expose their API via a JavaScript object in the web page. This object is called the common web wallet interface.
 
-<p className="text-center text-sm font-bold text-gray-300 mt-16 uppercase">
+---
+
+<p className="text-center font-bold text-gray-300 mt-10 mb-6 uppercase">
   Working Group
 </p>
-<div className="grid grid-cols-4 items-center gap-16 filter brightness-90 grayscale hover:grayscale-0">
+
+<div className="p-4 grid grid-cols-4 items-center gap-16">
   <div className="mx-auto">![](/xverse.webp)</div>
-  <div className="mx-auto">![](/asigna.png)</div>
   <div className="mx-auto">![](/leather.svg)</div>
+  <div className="mx-auto">![](/asigna.png)</div>
   <div className="mx-auto max-w-[72px]">![](/hiro.png)</div>
 </div>
+<div className="p-10 grid grid-cols-2 items-center gap-16">
+  <div className="mx-auto">![](/towo.png)</div>
+  <div className="mx-auto">![](/walletconnect.svg)</div>
+</div>
+
+<p className="text-center text-gray-300 mb-6 italic">
+  and more...
+</p>
+
+---
 
 Historically, Provider implementations have exhibited conflicting interfaces and behaviors between wallets. This working group formalizes an Bitcoin extension API to promote wallet interoperability. The API is designed to be minimal, event-driven, and agnostic of transport and RPC protocols. Its functionality is easily extended by defining new RPC methods and message event types.
