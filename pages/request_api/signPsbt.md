@@ -4,6 +4,7 @@
 
 ```
 Parameters: {
+  account: string, // first external account address
   psbt: string, // base64 encoded string of the psbt
   sign?: {
     [address: string]: int[] // indices to sign

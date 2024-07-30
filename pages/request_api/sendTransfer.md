@@ -4,11 +4,10 @@
 
 ```
 Parameters: {
-  recipients: {
-    address: string,
-    amount: number
-  }[],
-  memo?: string,
+  account: string,
+  recipientAddress: string,
+  amount: number,
+  memo?: string, // hex string
   changeAddress?: string,
 }
 

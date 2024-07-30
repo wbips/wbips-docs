@@ -2,19 +2,23 @@
 
 `draft` `rpc`
 
+`todo: update to other spec`
+
 ```
 Parameters: {
   types?: string[],
-  purposes?: string[],
+  intentions?: string[],
   count?: number
 }
 
 Returns: {
-  type?: string,
-  purpose?: string,
-  address: string,
-  publicKey?: string
-}[]
+  addresses: {
+    address: string,
+    path?: string,
+    publicKey?: string,
+    intention?: string,
+  }[],
+}
 ```
 
 > Purposes: 'change' | 'ordinals' | etc
