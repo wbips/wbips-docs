@@ -15,8 +15,8 @@ import { Callout } from "nextra/components";
 > **tl;dr** Make it easier for developers to build BTC enabled experiences!
 
 - Single interface for BTC and L2s, without the need for new interfaces in the future
-  - `window.btc` as the location for the global interface
-  - Use namespaces in method strings to denote L2s (e.g. "lbtc*" for Liquid wrapped Bitcoin, "ln*" for lightning, "stx*" for Stacks)
+  - `window.WalletProvider` as the location for the global interface
+  - Use namespaces in method strings to denote L2s (e.g. "lbtc*" for Liquid wrapped Bitcoin, "ln*" for lightning, "stx\*" for Stacks)
   - `.request` API which is future proof, without needing new specs or updates on the provider implementation
   - Standardized JSON API for alternatives communication channels (e.g. WalletConnect)
   - Simple and dynamic interface (i.e. not static methods, but rather dynamic strings and JSON objects)
@@ -25,8 +25,6 @@ import { Callout } from "nextra/components";
   - e.g. Stacks Connect (with its outdated success/error callbacks, unnecessary JWT wrapping and parameters)
 - The user (via the wallet interface) should have more control over the actions than the web-app
   - e.g. the user should also be able to choose the network/chain/nonce, not the web-app alone
-
-
 
 ## Goals
 
@@ -37,5 +35,6 @@ import { Callout } from "nextra/components";
   - Leather
   - Xverse
   - Marketplaces (OpenOrdex, etc.)
+  - Bifrost wallet
 - Reduce extisting methods to essentials (for new API styles)
 - Add WBIPs solving existing issues users/wallets/applications face

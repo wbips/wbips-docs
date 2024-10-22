@@ -19,8 +19,8 @@ For proposing new request methods the following applies:
 
 ### Web Interface
 
-For usage in web applications, wallets (e.g. browser extensions) MAY provide a provider object.
-The provider object MAY be injected into the global/window object (e.g. `window.btc`) or re-use an existing compatible interface (e.g. the WebBTC object).
+For usage in web applications, wallets (e.g. browser extensions) MUST provide a provider object.
+The provider object MAY be injected into the global/window object (e.g. `window.WalletProvider`) or re-use an existing compatible interface (e.g. the WebBTC object).
 
 This object SHOULD have at least the `.request` method for allowing to send JSON RPC requests to the wallet.
 This object MAY also include the `.listen` and `.unlisten` methods for listening to events.
