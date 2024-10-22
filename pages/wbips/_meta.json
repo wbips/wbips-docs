@@ -5,6 +5,6 @@
   "WBIP003": "WBIP003 — Conventions",
   "WBIP004": "WBIP004 — Providers",
   "WBIP005": "WBIP005 — BTC Methods",
-  "WBIP006": "WBIP006 — .signPSBT",
+  "WBIP006": "WBIP006 — .signPsbt",
   "WBIP007": "WBIP006 — .batch"
 }

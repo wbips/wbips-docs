@@ -4,7 +4,7 @@
 
 This WBIP proposes a new JSON RPC method for letting wallets sign partially signed Bitcoin transactions (PSBTs).
 
-`signPSBT`
+`signPsbt`
 
 ```
 Parameters: {
@@ -26,14 +26,14 @@ Returns: {
 ## Examples
 
 ```js
-window.btc.request("signPSBT", {
+window.WalletProvider.request("signPsbt", {
   psbt: "dcb512383d92f70c5a0014db9f936fe9…8e89bf02b618df3aa4545e4c647ce3a1",
   signInputs: [0, 1],
 });
 ```
 
 ```js
-window.btc.request("signPSBT", {
+window.WalletProvider.request("signPsbt", {
   psbt: "dcb512383d92f70c5a0014db9f936fe9…8e89bf02b618df3aa4545e4c647ce3a1",
   signInputs: {
     "1BpEi6DfDAUFd7GtittLSdBeYJvcoaVggu": [0],
