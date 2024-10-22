@@ -64,4 +64,4 @@ Providers previously added their global `window.btc` object (aka "provider") to 
 ### `TODO`
 
 - Should a `.provider` property be added, which references the actual provider object?
-  This would make it easier to have the provider object live on a nested path, e.g., `window.mywallet.provider` (with `id = 'mywallet.provider'`).
+  This would make it easier to have the provider object live on a nested path, e.g., `window.MyWalletProvider` (with `id = 'mywallet.provider'`).
