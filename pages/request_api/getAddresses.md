@@ -1,8 +1,23 @@
 # Method `getAddresses`
 
-`draft` `rpc`
+`rpc`
 
-`todo: update to other spec`
+```
+Parameters: {}
+
+Returns: {
+  addresses: {
+    address: string,
+    publicKey?: string,
+  }[],
+}
+```
+
+---
+
+`draft`
+
+> **Note**: Request parameters are still in development.
 
 ```
 Parameters: {
@@ -14,8 +29,8 @@ Parameters: {
 Returns: {
   addresses: {
     address: string,
-    path?: string,
     publicKey?: string,
+    path?: string,
     purpose?: string,
   }[],
 }
