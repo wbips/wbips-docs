@@ -7,7 +7,7 @@
 ```
 Parameters: {
   types?: string[],
-  intentions?: string[],
+  purposes?: string[],
   count?: number
 }
 
@@ -16,10 +16,11 @@ Returns: {
     address: string,
     path?: string,
     publicKey?: string,
-    intention?: string,
+    purpose?: string,
   }[],
 }
 ```
 
-> Purposes: 'change' | 'ordinals' | etc
-> Types: 'p2pkh' | 'p2sh' | 'p2wpkh-p2sh' | 'p2wpkh' | 'p2tr'
+> Purposes: `'payment' | 'change' | 'ordinals'` etc.
+>
+> Types: `'p2pkh' | 'p2sh' | 'p2wpkh-p2sh' | 'p2wpkh' | 'p2tr'`
