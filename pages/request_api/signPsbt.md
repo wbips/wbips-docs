@@ -7,6 +7,11 @@ Parameters: {
   psbt: string, // base64 encoded string of the psbt
   broadcast?: boolean // whether to broadcast the transaction
 }
+
+Returns: {
+  psbt: string, // base64 encoded string of the psbt,
+  txid?: string, // txid if the transaction was broadcast
+}
 ```
 
 ---
