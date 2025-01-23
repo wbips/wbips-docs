@@ -1,19 +1,27 @@
 # Method `signPsbt`
 
-`draft` `rpc`
+`rpc`
 
 ```
 Parameters: {
-  account: string, // first external account address
   psbt: string, // base64 encoded string of the psbt
-  sign?: {
-    [address: string]: int[] // indices to sign
-  },
   broadcast?: boolean // whether to broadcast the transaction
 }
 ```
 
 ---
+
+`draft`
+
+```
+Parameters: {
+  account?: string, // first external account address
+
+  sign?: {
+    [address: string]: int[] // indices to sign
+  },
+}
+```
 
 > Alternative: `hex` for hex encoded PSBT
 > Todo: `allowedSighash` (plural?) for sighash types
