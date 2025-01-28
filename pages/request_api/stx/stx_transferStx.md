@@ -14,8 +14,9 @@
 * `nonce?`: `number | string` BigInt constructor compatible value
 * `attachment?`: `string` hex-encoded
 * `sponsored?`: `boolean`, defaults to `false`
+* `broadcast?`: `boolean`, defaults to `true`
 
 `result`
 
-- `txid`: `string` hex-encoded
+- `txid?`: `string` hex-encoded
 - `transaction`: `string` hex-encoded raw transaction

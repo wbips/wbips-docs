@@ -1,6 +1,6 @@
 # WBIP003 — Common RPC Parameter Conventions
 
-`draft` `rpc`
+`accepted` `rpc`
 
 This WBIP RECOMMENDS conventions for future JSON RPC parameter WBIPs.
 
@@ -11,6 +11,10 @@ This WBIP RECOMMENDS conventions for future JSON RPC parameter WBIPs.
 - Responses MAY return publickeys (this SHOULD be treated optionally), users/wallet SHOULD be able to control whether they want to leak their public keys or not.
 - Ensure JSON serializability: E.g. bigint should be string (in any format a JavaScript constructor accepts)
 
-`todo`
+---
+
+> The below parameters are still in development.
+
+`draft`
 
 - `count` SHOULD be used for requesting a specific number of something (e.g. addresses)

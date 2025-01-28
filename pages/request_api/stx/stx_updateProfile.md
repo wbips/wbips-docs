@@ -6,4 +6,5 @@
 
 `result`
 
+- `txid?`: `string` hex-encoded
 - `profile`: `object` updated Schema.org Person object

@@ -10,7 +10,9 @@ Parameters: {
   }[]
 }
 
-Returns: { txid: string }
+Returns: {
+  txid: string
+}
 ```
 
 > The above `recipients` parameter matches the legacy webbtc `sendTransfer` method.
@@ -18,21 +20,9 @@ Returns: { txid: string }
 
 ---
 
+> The below parameters are still in development.
+
 `draft`
-
-```
-Parameters: {
-  recipientAddress: string,
-  amount: number,
-  changeAddress?: string,
-
-  account?: string,
-}
-
-Returns: { txid: string }
-```
-
-> The above parameters are still in development.
 
 ```
 Parameters: {

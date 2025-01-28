@@ -8,9 +8,9 @@ You can find definitions on how to construct them in JSON below.
 ```ts
 {
   type: 'stx-postcondition',
-  address: string | `${string}.${string}`, // Stacks c32-encoded, with optional contract name suffix
+  address: 'origin' | string | `${string}.${string}`, // Stacks c32-encoded, with optional contract name suffix
   condition: 'eq' | 'gt' | 'gte' | 'lt' | 'lte',
-  amount: string // `bigint` compatible, amount in micro-STX
+  amount: number | string // `bigint` compatible, amount in micro-STX
 }
 ```
 
@@ -19,10 +19,10 @@ You can find definitions on how to construct them in JSON below.
 ```ts
 {
   type: 'ft-postcondition',
-  address: string | `${string}.${string}`, // Stacks c32-encoded, with optional contract name suffix
+  address: 'origin' | string | `${string}.${string}`, // Stacks c32-encoded, with optional contract name suffix
   condition: 'eq' | 'gt' | 'gte' | 'lt' | 'lte',
   asset: `${string}.${string}::${string}`, // Stacks c32-encoded address, with contract name suffix, with asset suffix
-  amount: string // `bigint` compatible, amount in lowest integer denomination of fungible token
+  amount: number | string // `bigint` compatible, amount in lowest integer denomination of fungible token
 }
 ```
 
@@ -31,10 +31,10 @@ You can find definitions on how to construct them in JSON below.
 ```ts
 {
   type: 'nft-postcondition',
-  address: string | `${string}.${string}`, // Stacks c32-encoded, with optional contract name suffix
+  address: 'origin' | string | `${string}.${string}`, // Stacks c32-encoded, with optional contract name suffix
   condition: 'sent' | 'not-sent',
   asset: `${string}.${string}::${string}`, // address with contract name suffix with asset suffix, Stacks c32-encoded
-  assetId: object, // Clarity value
+  assetId: object, // Any Clarity value (represented as JSON)
 }
 ```
 
@@ -189,4 +189,4 @@ You can find definitions on how to construct them in JSON below.
 
 ## References
 
-- [SIP02X](https://github.com/janniks/sips/blob/main/sips/sip-02X/sip-02X-wallet-interface.md)
+- [SIP030](https://github.com/janniks/sips/blob/main/sips/sip-030/sip-030-wallet-interface.md)

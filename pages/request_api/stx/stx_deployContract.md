@@ -10,8 +10,8 @@
 * `network?`: `'mainnet' | 'testnet' | 'devnet' | 'regtest'`
 * `fee?`: `number | string` BigInt constructor compatible value
 * `nonce?`: `number | string` BigInt constructor compatible value
-* `attachment?`: `string` hex-encoded
 * `sponsored?`: `boolean`, defaults to `false`
+* `broadcast?`: `boolean`, defaults to `true`
 
 `result`
 

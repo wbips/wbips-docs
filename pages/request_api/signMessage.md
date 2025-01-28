@@ -1,6 +1,6 @@
 # Method `signMessage`
 
-`draft` `rpc`
+`rpc`
 
 ```
 Parameters: {
@@ -21,5 +21,9 @@ Returns: {
 window.btc.request("signMessage", {
   message: "Hello, world!",
   address: "1KXrWXciRDZUpQwQmuM1DbwsKDLYAYsVLR",
+});
+
+window.btc.request("signMessage", {
+  message: "My secret message!",
 });
 ```

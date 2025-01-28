@@ -12,8 +12,8 @@
 * `nonce?`: `number | string` BigInt constructor compatible value
 * `postConditions?`: [`PostCondition[]`](./representations.md), defaults to `[]`
 * `postConditionMode?`: `'allow' | 'deny'`
-* `attachment?`: `string` hex-encoded
 * `sponsored?`: `boolean`, defaults to `false`
+* `broadcast?`: `boolean`, defaults to `true`
 
 `result`
 

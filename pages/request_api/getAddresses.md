@@ -5,10 +5,12 @@
 ```
 Parameters: {}
 
+
 Returns: {
   addresses: {
     address: string,
     publicKey?: string,
+    symbol?: string, // symbol of the coin/token
   }[],
 }
 ```
@@ -17,7 +19,7 @@ Returns: {
 
 `draft`
 
-> **Note**: Request parameters are still in development.
+> **Note**: The following request parameters are still in development.
 
 ```
 Parameters: {
@@ -25,6 +27,7 @@ Parameters: {
   purposes?: string[],
   count?: number
 }
+
 
 Returns: {
   addresses: {

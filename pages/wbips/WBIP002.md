@@ -1,6 +1,6 @@
 # WBIP002 — Namespaces
 
-`draft` `rpc`
+`accepted` `rpc`
 
 This WBIP RECOMMENDS a naming convention for scoping JSON RPC methods.
 

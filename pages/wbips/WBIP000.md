@@ -1,6 +1,6 @@
 # WBIP000 — WBIP Intro
 
-`draft`
+`accepted`
 
 ## What is a WBIP?
 

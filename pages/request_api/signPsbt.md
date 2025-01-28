@@ -4,37 +4,43 @@
 
 ```
 Parameters: {
-  psbt: string, // base64 encoded string of the psbt
-  broadcast?: boolean // whether to broadcast the transaction
+  psbt: string, // hex encoded psbt
+  signInputs?: number[] | {
+    index: number,
+    address?: string,
+    publicKey?: string,
+    allowedSighash?: Sighash[] // default: [Sighash.ALL]
+  }[],
+  finalize?: boolean // default: true
+  broadcast?: boolean // default: false
 }
 
+Sighash: "ALL" | "NONE" | "SINGLE" | "ANYONECANPAY"
+
 Returns: {
-  psbt: string, // base64 encoded string of the psbt,
-  txid?: string, // txid if the transaction was broadcast
+  txid?: string
+  psbt: string
 }
 ```
 
+## Notes
+
+### Signing
+
+1. The wallet MAY try to sign all inputs if `signInputs` is NOT provided.
+2. The wallet SHOULD try to sign the inputs potentially marked encoded in the PSBT using the BIP32 derivation path.
+3. The wallet SHOULD try to sign the inputs given by the `signInputs` object and respective address.
+
 ---
+
+> The below parameters are still in development.
 
 `draft`
 
 ```
 Parameters: {
   account?: string, // first external account address
-
-  sign?: {
-    [address: string]: int[] // indices to sign
-  },
 }
 ```
 
-> Alternative: `hex` for hex encoded PSBT
-> Todo: `allowedSighash` (plural?) for sighash types
-
-## Notes
-
-### Signing
-
-1. The wallet MAY try to sign all inputs if `sign` is NOT provided.
-2. The wallet SHOULD try to sign the inputs potentially marked encoded in the PSBT.
-3. The wallet SHOULD try to sign the inputs given by the `sign` object and respective address.
+> Alternative?: `hex` for hex encoded PSBT

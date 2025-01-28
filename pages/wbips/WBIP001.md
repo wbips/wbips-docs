@@ -35,3 +35,5 @@ This object MAY also include the `.listen` and `.unlisten` methods for listening
 
 - The `.listen` could return a callable unsubscribe function.
 - The response from the `.request` method could be a promise that resolves with the result or rejects with an error.
+
+> Todo: Update the `.unlisten` to return a callable unsubscribe function instead.

@@ -1,18 +1,18 @@
-# WBIP004 — Web Providers
+# WBIP004 — Registering Web Providers
 
 `draft`
 
-> **todo:** also consider EIP inspired provider discovery (events/messages)
+> **todo:** also consider EIP inspired provider discovery (events/messages) as well as wallet standard
 
 This WBIP proposes a way of registering providers to be discovered by users of the WebBTC web interface.
 
-Wallets SHOULD register their provider information under `window.btc_providers` to be discoverable by websites/libraries expecting this WBIP.
+Wallets SHOULD register their provider information under `window.wbip_providers` to be discoverable by websites/libraries expecting this WBIP.
 
 ```js
-if (!window.btc_providers) window.btc_providers = []; // SHOULD make sure the array exists
+if (!window.wbip_providers) window.wbip_providers = []; // SHOULD make sure the array exists
 
 // SHOULD `.push`, NEVER overwrite the whole array
-window.btc_providers.push = {
+window.wbip_providers.push = {
   id: "MyWalletProvider",
   name: "My Wallet",
   icon: "data:image/svg+xml;base64,PHN2Z..ZnPgo=",

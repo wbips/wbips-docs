@@ -1,10 +1,12 @@
 # Method `stx_callContract`
 
+Calls a Stacks smart contract (Clarity) function.
+
 `params`
 
 - `contract`: `string.string` address with contract name suffix, Stacks c32-encoded
 - `functionName`: `string`
-- `functionArgs`: `ClarityValue[]`, defaults to `[]`
+- `functionArgs`: [`ClarityValue[]`](./representations.md), defaults to `[]`
 
 * `address?`: `string` address, Stacks c32-encoded, defaults to wallets current address
 * `network?`: `'mainnet' | 'testnet' | 'devnet' | 'regtest'`
@@ -12,12 +14,8 @@
 * `nonce?`: `number | string` BigInt constructor compatible value
 * `postConditions?`: [`PostCondition[]`](./representations.md), defaults to `[]`
 * `postConditionMode?`: `'allow' | 'deny'`
-* `attachment?`: `string` hex-encoded
 * `sponsored?`: `boolean`, defaults to `false`
-
-`where`
-
-- `ClarityValue`: `string | object` hex-encoded or JSON representation
+* `broadcast?`: `boolean`, defaults to `true`
 
 `result`
 

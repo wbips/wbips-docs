@@ -10,6 +10,7 @@ This WBIP mainly exists for backwards compatibility. Refer to the prior document
 
 ```
 Parameters: None
+
 Returns: {
   version: number | string,
   methods?: string[],
@@ -25,6 +26,7 @@ Parameters: {
   types: string[],
   purposes: string[],
 }
+
 Returns: {
   address: string,
   type?: string,
@@ -47,6 +49,7 @@ Parameters: {
   label?: string,
   message?: string
 }
+
 Returns: {
   paymentRequest: string
 }
@@ -59,6 +62,7 @@ Parameters: {
   message: string,
   address?: {}
 }
+
 Returns: {
   signature: string,
   messageHash?: string,
@@ -76,6 +80,7 @@ Returns: {
 Parameters: {
   paymentRequest: string
 }
+
 Returns: {
   txid: string
 }
