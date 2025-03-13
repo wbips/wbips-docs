@@ -10,6 +10,8 @@
 * `network?`: `'mainnet' | 'testnet' | 'devnet' | 'regtest'`
 * `fee?`: `number | string` BigInt constructor compatible value
 * `nonce?`: `number | string` BigInt constructor compatible value
+* `postConditions?`: [`PostCondition[] | string[]`](./representations.md) JSON representation or hex serialized string, defaults to `[]`
+* `postConditionMode?`: `'allow' | 'deny'`
 * `sponsored?`: `boolean`, defaults to `false`
 * `broadcast?`: `boolean`, defaults to `true`
 
